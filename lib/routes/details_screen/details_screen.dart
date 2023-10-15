@@ -2,9 +2,9 @@ import 'package:explorer/routes/details_screen/widgets/details_screen_widgets.da
 import 'package:flutter/material.dart';
 
 //ignore:camel_case_types
-class detailsScreenWidget extends StatelessWidget{
+class detailsScreen extends StatelessWidget{
   final String title;
-  const detailsScreenWidget({super.key, required this.title});
+  const detailsScreen({super.key, required this.title});
 
   @override
   Widget build(BuildContext context){

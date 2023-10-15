@@ -1,6 +1,7 @@
 
 
 import 'package:explorer/routes/category_screen/category_screen.dart';
+import 'package:explorer/routes/details_screen/details_screen.dart';
 import 'package:explorer/routes/home_screen/home_screen.dart';
 import 'package:explorer/routes/login_screen/login_screen.dart';
 import 'package:explorer/routes/register_screen/register_screen.dart';
@@ -34,6 +35,8 @@ class RouteGenerator{
             ));
       case detailsscreen:
           final String arg = settings.arguments as String;
+          return MaterialPageRoute(
+            builder:(context)=> detailsScreen(title: arg));
       default:
         return MaterialPageRoute(
           builder: (context)=>const loginScreen());
