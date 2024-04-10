@@ -59,8 +59,33 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/features/Budongo_forest/image.jpeg
+    - assets/features/Bwindi_park/image.jpg
+    - assets/features/Kibale_forest/image.jpeg
+    - assets/features/Kibale_National_park_mgahinga/image.jpg
+    - assets/features/Kidepo_valley/image.jpg
+    - assets/features/Lake_Albert/image.jpeg
+    - assets/features/Lake_Bunyonyi/image.jpeg
+    - assets/features/Lake_Edward/image.jpeg
+    - assets/features/Lake_George/image.jpeg
+    - assets/features/Lake_Kyoga/image.jpeg
+    - assets/features/Lake_Mburo/image.jpeg
+    - assets/features/Lake_victoria/image.jpeg
+    - assets/features/Mabira_forest/image.jpeg
+    - assets/features/Mburo_park/image.jpg
+    - assets/features/Mpanga_forest/image.jpeg
+    - assets/features/Mt_Elgon/image.jpeg
+    - assets/features/Mt_Mugahinga/image.jpeg
+    - assets/features/Mt_Muhavura/image.jpeg
+    - assets/features/Mt_Rwenzori/image.jpeg
+    - assets/features/Murchison_falls/image.jpg
+    - assets/features/Queen_Elizabeth/image.jpg
+    - assets/features/River_Katonga/image.jpeg
+    - assets/features/River_Nile/image.jpeg
+    - assets/features/Semliki_park/image.jpg
+    - assets/features/River_Ssemuliki/image.jpeg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,5 +1,6 @@
 import 'package:explorer/routes/login_screen/widgets/login_widgets.dart';
 import 'package:explorer/routes/register_screen/widgets/register_widgets.dart';
+import 'package:explorer/routes/splash_screen/widgets/splash_screen_widgets.dart';
 import 'package:flutter/material.dart';
 
 //ignore:camel_case_types
@@ -15,7 +16,8 @@ class registerScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(height: 30,),
-          logoWidget(),
+          // logoWidget(),
+          UgExploreWidget(),
           SizedBox(height: 50,),
           Padding(
             padding: EdgeInsets.all(20),

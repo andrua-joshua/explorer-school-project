@@ -19,7 +19,7 @@ class imagesWidget extends StatelessWidget{
                 height: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.grey
+                  color: const Color.fromARGB(255, 236, 236, 236)
                 ),
               ),
               Container(
@@ -27,7 +27,7 @@ class imagesWidget extends StatelessWidget{
                 height: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.grey
+                  color: const Color.fromARGB(255, 236, 236, 236)
                 ),
               ),
             ],
@@ -52,9 +52,10 @@ class sectionTwoWidget extends StatelessWidget{
   Widget build(BuildContext context){
     return SizedBox(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-           Text(title, style: const TextStyle(fontWeight: FontWeight.bold),),
-           Text(details),
+           Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
+           Text(details, style: const TextStyle(fontSize: 17),),
         ],
       ),
     );

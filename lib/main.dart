@@ -1,8 +1,10 @@
+import 'package:explorer/kevins/routes/home_screen/home_screen.dart';
 import 'package:explorer/routes.dart';
 import 'package:explorer/routes/category_screen/category_screen.dart';
 import 'package:explorer/routes/home_screen/home_screen.dart';
 import 'package:explorer/routes/login_screen/login_screen.dart';
 import 'package:explorer/routes/register_screen/register_screen.dart';
+import 'package:explorer/routes/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,9 +40,9 @@ class MyApp extends StatelessWidget {
         
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: RouteGenerator.loginscreen,
+      initialRoute: RouteGenerator.splashscreen,
       onGenerateRoute: RouteGenerator.generateRoute,
-      //home:const homeScreen(),
+      // home:const CodedHomeScreen(),
     );
   }
 }

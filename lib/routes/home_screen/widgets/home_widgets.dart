@@ -47,29 +47,52 @@ class sliderWidget extends StatelessWidget {
 class categoryWidget extends StatelessWidget {
   final String title;
   final String imgUrl;
-  const categoryWidget({required this.title, required this.imgUrl, super.key});
+  final String type;
+  const categoryWidget({required this.title, required this.imgUrl, super.key, required this.type});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       decoration: const BoxDecoration(),
       child: Column(
         children: [
-          Text(
-            title,
-            style:
-                const TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
-          ),
+          // Text(
+          //   title,
+          //   style:
+          //       const TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+          // ),
           GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, RouteGenerator.categoryscreen,
-                    arguments: title);
+                    arguments: {"title":title, "type":type});
               },
               child: Container(
                 constraints: const BoxConstraints.expand(height: 150),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.blueGrey),
+                    image: DecorationImage(
+                    fit:BoxFit.cover,
+                      image: AssetImage(imgUrl)),
+                    color: const Color.fromARGB(255, 238, 238, 238)),
+
+                    child: Stack(
+                      children: [
+                        // Align(
+                        //   // child: Image(image: AssetImage(imgUrl)),
+                        // ),
+
+                        Align(
+                          alignment: Alignment.bottomLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child:Text(
+                            title, 
+                            style: const TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),))
+                        )
+                      ],
+                    ),
               ))
         ],
       ),

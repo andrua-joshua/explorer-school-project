@@ -42,7 +42,7 @@ class _registrationFormWidgetState extends State<registrationFormWidget> {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: const Color.fromARGB(255, 150, 149, 149)),
+          color: const Color.fromARGB(255, 236, 236, 236)),
       padding: const EdgeInsets.all(10),
       child: Form(
           key: key,

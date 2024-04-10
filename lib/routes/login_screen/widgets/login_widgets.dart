@@ -36,7 +36,7 @@ class _loginFormWidgetState extends State<loginFormWidget> {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: const Color.fromARGB(255, 150, 149, 149)),
+          color: Color.fromARGB(255, 240, 240, 240)),
       padding: const EdgeInsets.all(10),
       child: Form(
           key: key,
